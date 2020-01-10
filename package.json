@@ -1,5 +1,5 @@
 {
-  "name": "hx-eslint-rules",
+  "name": "eslint-plugin-hx-rules",
   "version": "1.0.0",
   "description": "ESLint plugin for adding rules for best coding practices agreed at Holiday Extras",
   "main": "index.js",
