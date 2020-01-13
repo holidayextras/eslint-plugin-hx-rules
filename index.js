@@ -1,5 +1,27 @@
 module.exports = {
   rules: {
+    'before-each': {
+      create: (context) => ({
+        'Identifier[name="beforeEach"]' (node) {
+          const ancestors = context.getAncestors()
+          const count = ancestors.reduce((acc, a) => {
+            if (
+              a.type === 'CallExpression' &&
+              a.callee.type === 'Identifier' &&
+              ['context', 'describe'].includes(a.callee.name)
+            ) {
+              return acc + 1
+            }
+
+            return acc
+          }, 0)
+
+          if (count > 1) {
+            context.report(node, 'test has nested beforeEach')
+          }
+        }
+      })
+    },
     'no-template-literals': {
       create: (context) => ({
         TemplateLiteral (node) {
