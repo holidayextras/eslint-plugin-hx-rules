@@ -28,3 +28,7 @@ npm link ../eslint-plugin-hx-rules
     }
 }
 ```
+
+### Rules
+
+* [No stubbing in nested before each](./docs/rules/no-stubbing-in-nested-before-each.md)
