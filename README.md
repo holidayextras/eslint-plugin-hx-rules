@@ -32,3 +32,4 @@ npm link ../eslint-plugin-hx-rules
 ### Rules
 
 * [No stubbing in nested before each](./docs/rules/no-stubbing-in-nested-before-each.md)
+* [No flag function parameters](./docs/rules/no-flag-function-parameters.md)
