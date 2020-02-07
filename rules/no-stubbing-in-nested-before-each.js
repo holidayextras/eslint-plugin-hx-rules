@@ -5,7 +5,7 @@ module.exports = {
       description: 'disallow usage of stub in nested beforeEach blocks',
       category: 'Possible Errors',
       recommended: true,
-      url: 'https://github.com/holidayextras/eslint-plugin-hx-rules#no-stubbing-in-nested-before-each'
+      url: 'https://github.com/holidayextras/docs/rules/no-stubbing-in-nested-before-each.md'
     }
   },
   create: (context) => ({
