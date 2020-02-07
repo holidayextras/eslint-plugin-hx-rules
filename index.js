@@ -1,6 +1,7 @@
 module.exports = {
   rules: {
     'no-stubbing-in-nested-before-each': require('./rules/no-stubbing-in-nested-before-each'),
+    'prefer-single-sinon-restore': require('./rules/prefer-single-sinon-restore'),
     'no-template-literals': {
       create: (context) => ({
         TemplateLiteral (node) {
