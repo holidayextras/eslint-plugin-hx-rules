@@ -40,7 +40,7 @@ There is one exception. Any calls to `sinon.stub()` are ignored as you might be 
 
 *Bad*
 
-```
+```javascript
 const dep = require('./dep')
 
 describe('module name', () => {
@@ -68,7 +68,7 @@ describe('module name', () => {
 
 *Good*
 
-```
+```javascript
 const dep = require('./dep')
 
 describe('module name', () => {
