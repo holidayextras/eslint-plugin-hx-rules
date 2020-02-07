@@ -1,27 +1,8 @@
+// TODO: add rule for `.restore` being called on methods, suggest it gets called on sinon or sandbox only
+
 module.exports = {
   rules: {
-    'before-each': {
-      create: (context) => ({
-        'Identifier[name="beforeEach"]' (node) {
-          const ancestors = context.getAncestors()
-          const count = ancestors.reduce((acc, a) => {
-            if (
-              a.type === 'CallExpression' &&
-              a.callee.type === 'Identifier' &&
-              ['context', 'describe'].includes(a.callee.name)
-            ) {
-              return acc + 1
-            }
-
-            return acc
-          }, 0)
-
-          if (count > 1) {
-            context.report(node, 'test has nested beforeEach')
-          }
-        }
-      })
-    },
+    'stubbing-in-nested-before-each': require('./rules/stubbingInNestedBeforeEach'),
     'no-template-literals': {
       create: (context) => ({
         TemplateLiteral (node) {
