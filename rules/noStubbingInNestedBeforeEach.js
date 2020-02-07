@@ -1,4 +1,13 @@
 module.exports = {
+  meta: {
+    type: 'suggestion',
+    docs: {
+      description: 'disallow usage of stub in nested beforeEach blocks',
+      category: 'Possible Errors',
+      recommended: true,
+      url: 'https://github.com/holidayextras/eslint-plugin-hx-rules#no-stubbing-in-nested-before-each'
+    }
+  },
   create: (context) => ({
     'Identifier[name="stub"]' (node) {
       const ancestors = context.getAncestors()

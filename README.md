@@ -31,7 +31,7 @@ npm link ../eslint-plugin-hx-rules
 
 ### Rules
 
-* [No stubbing in nested before each](#stubbing-in-nested-before-each)
+* [No stubbing in nested before each](#no-stubbing-in-nested-before-each)
 
 ##### No stubbing in nested before each
 
