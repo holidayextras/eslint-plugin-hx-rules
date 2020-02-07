@@ -22,6 +22,7 @@ module.exports = {
           }
         }
       })
-    }
+    },
+    'no-flag-function-parameters': require('./rules/no-flag-function-parameters')
   }
 }
