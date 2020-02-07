@@ -48,7 +48,7 @@ describe('module name', () => {
     beforeEach(() => {
       sinon.stub(dep, 'method').yields(null, 'foo')
     })
-    
+
     it('should ..', () => {
       // testing methodOne
     })
@@ -58,7 +58,7 @@ describe('module name', () => {
     beforeEach(() => {
       sinon.stub(dep, 'method').yields(null, 'bar')
     })
-    
+
     it('should ..', () => {
       // testing methodTwo
     })
@@ -80,7 +80,7 @@ describe('module name', () => {
     beforeEach(() => {
       dep.method.yields(null, 'foo')
     })
-    
+
     it('should ..', () => {
       // testing methodOne
     })
@@ -90,7 +90,7 @@ describe('module name', () => {
     beforeEach(() => {
       dep.method.yields(null, 'bar')
     })
-    
+
     it('should ..', () => {
       // testing methodTwo
     })
