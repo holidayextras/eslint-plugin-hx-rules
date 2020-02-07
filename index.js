@@ -1,5 +1,3 @@
-// TODO: add rule for `.restore` being called on methods, suggest it gets called on sinon or sandbox only
-
 module.exports = {
   rules: {
     'stubbing-in-nested-before-each': require('./rules/stubbingInNestedBeforeEach'),
